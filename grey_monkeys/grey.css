@@ -1,33 +1,33 @@
 * {
-    box-sizing: border-box; /*size of elements include padd and border*/
+    box-sizing: border-box;
 }
 body{
     background: silver;
-    margin: 0; /*there is a margin on deafault, lets cancel it!*/
+    margin: 0;
     font-family: 'poppins';
 }
 .container-fluid{
-    width: 100%; /*takes the entire screen width space*/
-    padding: 0 16px; /*padding{(t&b)=0,(r&l)=16}*/
+    width: 100%; 
+    padding: 0 16px; 
     
 }
 .container{
-    max-width: 1000px; /*fits itself to the screen if it gets shrinked*/
-    margin: 0 auto; /*center horizontally (x axis)*/
+    max-width: 1000px; 
+    margin: 0 auto; 
     
 }
 .containere{
-    max-width: 2000px; /*fits itself to the screen if it gets shrinked*/
-    margin: 0 auto; /*center horizontally (x axis)*/
+    max-width: 2000px; 
+    margin: 0 auto; 
     
 }
 
 header{
-    min-height: 80px; /*if his "children" are higer, header will streach*/
+    min-height: 80px; 
     background: black;
 }
 header .container{
-    display: flex; /*display items next to each other*/
+    display: flex; 
     justify-content: space-around;
     align-items: center;
     color: rgb(190, 190, 190);
@@ -41,10 +41,10 @@ header .nav{
 }
 header nav a{
     color: rgb(221, 221, 221);
-    text-decoration: none; /*no decoration (remove underline)*/
+    text-decoration: none; 
     font-family: poppins;
     font-weight: 500;
-    padding: 0 12px; /*add space between each link (a)*/
+    padding: 0 12px; 
 }
 header nav button{
     background: #facc00;
@@ -74,13 +74,13 @@ header nav a:hover{ /*while hovering*/
     left: o;
     min-height: 300px;
     background-image:url(marvel_rivals_strip.jpg) ;
-    filter: brightness(50%); /* Adjust brightness to 50% */
+    filter: brightness(50%); 
 }
 .strip .containere{
     
     max-width: 400px;
-    min-height: inherit; /*copy height from dad (_strip_) */
-    padding: 8px; /*solve wierd apce caused by h1 margin*/
+    min-height: inherit; 
+    padding: 8px; 
     color: white;
     display: flex;
     text-align: center;
@@ -104,9 +104,9 @@ header nav a:hover{ /*while hovering*/
     background-color: #ffee00;
 }
 main{
-    min-height: 200px; /*if his "children" are higer, header will streach*/
+    min-height: 200px; 
     background: silver;
-    position: relative; /*אם לילד יש אבסלוט לאבא צריך להיות רלטיב*/
+    position: relative;
 }
 main .decor{
     position: absolute;
