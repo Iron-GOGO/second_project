@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box; /*size of elements include padd and border*/
+}
+body{
+    background: silver;
+    margin: 0; /*there is a margin on deafault, lets cancel it!*/
+    font-family: 'poppins';
+}
+.container-fluid{
+    width: 100%; /*takes the entire screen width space*/
+    padding: 0 16px; /*padding{(t&b)=0,(r&l)=16}*/
+    
+}
+.container{
+    max-width: 1000px; /*fits itself to the screen if it gets shrinked*/
+    margin: 0 auto; /*center horizontally (x axis)*/
+    
+}
+.containere{
+    max-width: 2000px; /*fits itself to the screen if it gets shrinked*/
+    margin: 0 auto; /*center horizontally (x axis)*/
+    
+}
+
+header{
+    min-height: 80px; /*if his "children" are higer, header will streach*/
+    background: black;
+}
+header .container{
+    display: flex; /*display items next to each other*/
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(190, 190, 190);
+}
+header .container img{
+    width: 216px;
+    padding-top: 8px;
+}
+header .nav{
+    
+}
+header nav a{
+    color: rgb(221, 221, 221);
+    text-decoration: none; /*no decoration (remove underline)*/
+    font-family: poppins;
+    font-weight: 500;
+    padding: 0 12px; /*add space between each link (a)*/
+}
+header nav button{
+    background: #facc00;
+    color: #000000;
+    font-weight: 520;
+    padding: 8px;
+    margin-left: 8px;
+    transform: skewx(-10deg);
+    font-size: 24px;
+}
+header nav button:hover{
+    background-color: #ffee00;
+}
+header nav a:hover{ /*while hovering*/
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.strip {
+    position: relative;
+   
+    
+    
+}
+.photo {
+    position: absolute;
+    top: 0;
+    left: o;
+    min-height: 300px;
+    background-image:url(marvel_rivals_strip.jpg) ;
+    filter: brightness(50%); /* Adjust brightness to 50% */
+}
+.strip .containere{
+    
+    max-width: 400px;
+    min-height: inherit; /*copy height from dad (_strip_) */
+    padding: 8px; /*solve wierd apce caused by h1 margin*/
+    color: white;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    filter: brightness(200%);
+    z-index: 100;
+    
+    
+}
+.strip button{
+    background: #facc00;
+    color: #000000;
+    font-weight: 900;
+    padding: 8px 24px;
+    margin-left: 8px;
+    transform: skewx(-10deg);
+    font-size: 16px;
+    border: none;
+}
+.strip button:hover{
+    background-color: #ffee00;
+}
+main{
+    min-height: 200px; /*if his "children" are higer, header will streach*/
+    background: silver;
+    position: relative; /*אם לילד יש אבסלוט לאבא צריך להיות רלטיב*/
+}
+main .decor{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: rgb(129, 129, 129);
+}
+main .container{
+    
+    padding: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+main .box{  
+    width:30%;
+    background: #ffffff;
+    text-align: center;
+    padding: 16px;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    z-index: 99;
+    background: linear-gradient(135deg, rgb(255, 255, 255) 40%, rgba(255, 255, 255, 0.5) 50%, rgba(0, 174, 255, 0.342) 100%);
+}
+.strip .containere h1{
+    font-size: 49px;
+}
+.strip .containere p{
+    font-size: 25px;
+    font-style: italic;
+}
+.black{ 
+    width: 120px;
+    margin-bottom: 0;
+
+}
+.avengers{ 
+    width: 80px;
+    margin-bottom: 34px;
+}
+.shield{
+    width: 108px;
+    margin-bottom: 32px;
+}
+
+
